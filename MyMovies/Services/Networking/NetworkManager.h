@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import <UIKit/UIKit.h>
 
 @interface NetworkManager : NSObject
 
-@end
+@property const NSString *BASE_URL;
 
-NS_ASSUME_NONNULL_END
+-(void) getAllMovies:(UIViewController *) delegate;
+
+@end
