@@ -7,8 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import "NetworkManager.h"
+#import "DeleteMovieProtocol.h"
 
-@interface HomeViewController : UITableViewController<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+@interface HomeViewController : UITableViewController<NSURLConnectionDelegate, NSURLConnectionDataDelegate, DeleteMovieProtocol>
 
 @property NetworkManager *networkManager;
 @property NSMutableData *responseData; //collect response
@@ -20,8 +21,5 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection;
-
-// NSURLConnectionDelegate
-//- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
 
 @end

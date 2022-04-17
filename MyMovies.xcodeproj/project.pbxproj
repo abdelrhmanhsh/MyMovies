@@ -11,7 +11,6 @@
 		91071DF3FCA2FDCD3FEDD1A0 /* Pods_MyMovies_MyMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B2C1D0A2BAAF3F4E9C5A2C /* Pods_MyMovies_MyMoviesUITests.framework */; };
 		BC07482A2806AD47007A40EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0748292806AD47007A40EC /* AppDelegate.m */; };
 		BC07482D2806AD47007A40EC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC07482C2806AD47007A40EC /* SceneDelegate.m */; };
-		BC0748302806AD47007A40EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC07482F2806AD47007A40EC /* ViewController.m */; };
 		BC0748332806AD47007A40EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0748312806AD47007A40EC /* Main.storyboard */; };
 		BC0748352806AD48007A40EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0748342806AD48007A40EC /* Assets.xcassets */; };
 		BC0748382806AD48007A40EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0748362806AD48007A40EC /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		BC0748512806AD48007A40EC /* MyMoviesUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0748502806AD48007A40EC /* MyMoviesUITestsLaunchTests.m */; };
 		BCDCD79B280A29C700874E40 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCD79A280A29C700874E40 /* NetworkManager.m */; };
 		BCDCD79F280A29E100874E40 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCD79E280A29E100874E40 /* Movie.m */; };
+		BCDCD7A4280A2E1E00874E40 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCD7A3280A2E1E00874E40 /* HomeViewController.m */; };
+		BCDCD7A7280A465C00874E40 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCD7A6280A465C00874E40 /* DetailsViewController.m */; };
 		C678A7F52772F8EC4EB2D1C1 /* Pods_MyMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA5B5DFCFA2945416BE5CC2 /* Pods_MyMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +54,6 @@
 		BC0748292806AD47007A40EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BC07482B2806AD47007A40EC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BC07482C2806AD47007A40EC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BC07482E2806AD47007A40EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC07482F2806AD47007A40EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC0748322806AD47007A40EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC0748342806AD48007A40EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC0748372806AD48007A40EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,10 +64,15 @@
 		BC07484A2806AD48007A40EC /* MyMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC07484E2806AD48007A40EC /* MyMoviesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMoviesUITests.m; sourceTree = "<group>"; };
 		BC0748502806AD48007A40EC /* MyMoviesUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMoviesUITestsLaunchTests.m; sourceTree = "<group>"; };
+		BC677179280BB3E000145727 /* DeleteMovieProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteMovieProtocol.h; sourceTree = "<group>"; };
 		BCDCD799280A29C700874E40 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		BCDCD79A280A29C700874E40 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		BCDCD79D280A29E100874E40 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		BCDCD79E280A29E100874E40 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		BCDCD7A2280A2E1E00874E40 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BCDCD7A3280A2E1E00874E40 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BCDCD7A5280A465C00874E40 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		BCDCD7A6280A465C00874E40 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		DC68F7A7DD306989E6087689 /* Pods-MyMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies.release.xcconfig"; path = "Target Support Files/Pods-MyMovies/Pods-MyMovies.release.xcconfig"; sourceTree = "<group>"; };
 		F88204ECE5B39A1E249AED9F /* Pods-MyMovies-MyMoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies-MyMoviesUITests.release.xcconfig"; path = "Target Support Files/Pods-MyMovies-MyMoviesUITests/Pods-MyMovies-MyMoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FEA5B5DFCFA2945416BE5CC2 /* Pods_MyMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,8 +162,6 @@
 				BC0748292806AD47007A40EC /* AppDelegate.m */,
 				BC07482B2806AD47007A40EC /* SceneDelegate.h */,
 				BC07482C2806AD47007A40EC /* SceneDelegate.m */,
-				BC07482E2806AD47007A40EC /* ViewController.h */,
-				BC07482F2806AD47007A40EC /* ViewController.m */,
 				BC0748312806AD47007A40EC /* Main.storyboard */,
 				BC0748342806AD48007A40EC /* Assets.xcassets */,
 				BC0748362806AD48007A40EC /* LaunchScreen.storyboard */,
@@ -206,6 +208,7 @@
 		BCDCD79C280A29D000874E40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC677179280BB3E000145727 /* DeleteMovieProtocol.h */,
 				BCDCD79D280A29E100874E40 /* Movie.h */,
 				BCDCD79E280A29E100874E40 /* Movie.m */,
 			);
@@ -215,6 +218,8 @@
 		BCDCD7A0280A29E800874E40 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BCDCD7A2280A2E1E00874E40 /* HomeViewController.h */,
+				BCDCD7A3280A2E1E00874E40 /* HomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -222,6 +227,8 @@
 		BCDCD7A1280A29F100874E40 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				BCDCD7A5280A465C00874E40 /* DetailsViewController.h */,
+				BCDCD7A6280A465C00874E40 /* DetailsViewController.m */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -465,11 +472,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDCD79F280A29E100874E40 /* Movie.m in Sources */,
-				BC0748302806AD47007A40EC /* ViewController.m in Sources */,
 				BC07482A2806AD47007A40EC /* AppDelegate.m in Sources */,
 				BC07483B2806AD48007A40EC /* main.m in Sources */,
 				BCDCD79B280A29C700874E40 /* NetworkManager.m in Sources */,
+				BCDCD7A4280A2E1E00874E40 /* HomeViewController.m in Sources */,
 				BC07482D2806AD47007A40EC /* SceneDelegate.m in Sources */,
+				BCDCD7A7280A465C00874E40 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
     
     _networkManager = [NetworkManager new];
     [_networkManager getAllMovies:self];
-    printf("Home viewDidLoad\n");
+    _movieList = [NSMutableArray new];
     
 }
 
@@ -40,7 +40,14 @@
 // convert incoming data to array of movies
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     printf("connectionDidFinishLoading\n");
-    _movieList = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingAllowFragments error:nil];
+    
+    NSMutableArray *moviesDict = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingAllowFragments error:nil];
+    
+    for(int i = 0; i < moviesDict.count; i++){
+        Movie *movie = [self convertDictionaryToMovie:[moviesDict objectAtIndex:i]];
+        [_movieList addObject:movie];
+    }
+    
     [self.tableView reloadData];
     printf("Movies Count: %d\n", _movieList.count);
 }
@@ -59,9 +66,9 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    NSDictionary *dict = _movieList[indexPath.row];
+//    NSDictionary *dict = _movieList[indexPath.row];
     
-    Movie *movie = [self convertDictionaryToMovie:dict];
+    Movie *movie = _movieList[indexPath.row];
     
     cell.textLabel.text = movie.title;
     
@@ -122,9 +129,10 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
-    NSDictionary *dict = _movieList[self.tableView.indexPathForSelectedRow.row];
-    Movie *movie = [self convertDictionaryToMovie:dict];
+//    NSDictionary *dict = _movieList[self.tableView.indexPathForSelectedRow.row];
+    Movie *movie = _movieList[self.tableView.indexPathForSelectedRow.row];
     ((DetailsViewController *)segue.destinationViewController).movie = movie;
+    ((DetailsViewController *)segue.destinationViewController).homeVCDelegate = self;
     
 }
 
@@ -141,5 +149,9 @@
     
 }
 
+- (void)deleteMovie:(id)movie{
+    [_movieList removeObject:movie];
+    [self.tableView reloadData];
+}
 
 @end

@@ -38,7 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dA-4B-kGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.7971014492755" y="51.5625"/>
+            <point key="canvasLocation" x="1914" y="52"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="pVW-30-9kl">
@@ -84,7 +84,13 @@
                         <viewLayoutGuide key="safeArea" id="eh1-Wr-F4s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AIo-Sb-Bga"/>
+                    <navigationItem key="navigationItem" id="AIo-Sb-Bga">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="INg-hc-gY4">
+                            <connections>
+                                <action selector="btnDelete:" destination="cyN-FK-QyQ" id="KKF-Kd-7YY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="movieGenre" destination="xcW-i8-TTK" id="nB3-nd-WAs"/>
                         <outlet property="movieImage" destination="EM2-Bg-A8B" id="tJt-UD-sgb"/>
@@ -95,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8e-UU-Puu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2801.449275362319" y="49.553571428571423"/>
+            <point key="canvasLocation" x="2712" y="52"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JLN-zG-pc3">

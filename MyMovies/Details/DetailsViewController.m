@@ -37,4 +37,8 @@
 }
 */
 
+- (IBAction)btnDelete:(UIBarButtonItem *)sender {
+    [_homeVCDelegate deleteMovie:_movie];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end
